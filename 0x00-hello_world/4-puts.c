@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * @str[]: character array
- * 
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
