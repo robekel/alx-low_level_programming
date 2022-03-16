@@ -2,9 +2,9 @@
 
 /**
  * main - Entry point
- * @str: character array
+ * @str[]: character array
  * 
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,5 +12,5 @@ int main(void)
 
 	puts(str);
 
-	return 0;
+	return (0);
 }
