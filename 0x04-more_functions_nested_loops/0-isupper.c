@@ -3,19 +3,17 @@
 
 /**
  * _isupper  - check if uppper case.
+ * @c: value to be checked
  *
  * Return: result.
  */
 
 int _isupper(int c)
 {
-	int result;
 
 	if (isupper(c) == 0)
-		result = 0;
+		return (0);
 	else
-		result = 1;
-
-	return result;
+		return (1);
 
 }
