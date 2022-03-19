@@ -3,6 +3,7 @@
 
 /**
  * print_line - print numbers 0-9.
+ * @n: number of times to print
  *
  * Return: numbers.
  */
