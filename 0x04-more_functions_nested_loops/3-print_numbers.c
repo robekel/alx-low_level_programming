@@ -1,14 +1,20 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * mul - multuiply .
- * @a: argument_1
- * @b: argument_2
+ * print_numbers - print numbers 0-9.
  *
- * Return: product of arguments.
+ * Return: numbers.
  */
 
-void print(void)
+void print_numbers(void)
 {
-	return (a * b);
+	char i;
+
+	for (i = '0'; i < '9'; i++)
+	{
+		_putchar(i);
+	}
+
+	_putchar('\n');
 }
