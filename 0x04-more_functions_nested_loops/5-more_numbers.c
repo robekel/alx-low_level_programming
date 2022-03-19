@@ -5,7 +5,7 @@
  * more_numbers - print numbers 0-14, 10 times.
  *
  * Return: numbers.
- */
+ **/
 
 void more_numbers(void)
 {
@@ -26,4 +26,5 @@ void more_numbers(void)
 	}
 
 	_putchar('\n');
+	
 }
