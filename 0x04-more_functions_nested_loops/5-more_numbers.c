@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -9,17 +10,15 @@
 
 void more_numbers(void)
 {
-	char i;
+	int i;
 	int j;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			char a;
 
-			a = j + '0';
-			_putchar(a);
+			_putchar('0' + j);
 		}
 
 		_putchar('\n');
