@@ -16,10 +16,12 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			char a = j + '0';
+			char a;
+
+			a = j + '0';
 			_putchar(a);
 		}
-		
+
 		_putchar('\n');
 	}
 
