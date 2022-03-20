@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - print numbers 0-9.
@@ -24,5 +23,5 @@ int main(void)
 	}
 	printf("\n");
 
-	return (0);
+	return (1);
 }
