@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * print_triangle - print numbers 0-9.
- * @temp: number of times to print
+ * print_triangle - print triangle
+ * @size: number of times to print
  *
  * Return: numbers.
  */
@@ -30,7 +30,7 @@ void print_triangle(int size)
 				_putchar(' ');
 			}
 
-			for(k = 0; k <= i; k++)
+			for (k = 0; k <= i; k++)
 			{
 				_putchar('#');
 			}
