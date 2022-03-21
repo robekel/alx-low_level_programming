@@ -24,7 +24,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	if (n <= 0 && n < 10)
+	if (n >= 0 && n < 10)
 	{
 		d0 = n;
 	}
