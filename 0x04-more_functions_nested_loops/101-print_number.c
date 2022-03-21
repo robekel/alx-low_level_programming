@@ -61,6 +61,4 @@ void print_number(int n)
 	}
 
 	_putchar(d0 + '0');
-	
-	_putchar('\n');
 }
