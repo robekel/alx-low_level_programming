@@ -34,7 +34,7 @@ void print_number(int n)
 		d0 = n % 10;
 		_putchar(d1 + '0');
 	}
-	else if ((n >=100) && (n < 1000))
+	else if ((n >= 100) && (n < 1000))
 	{
 		d2 = n / 100;
 		d1tmp = n % 100;
