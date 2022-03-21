@@ -2,9 +2,6 @@
 
 /**
  * main - find the largest prime factor
- * @n: input number
- * @div: constant
- * @maxFact: largest factorial
  *
  * Return: Always 0.
  */
