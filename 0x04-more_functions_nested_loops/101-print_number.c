@@ -4,8 +4,8 @@
 
 /**
  * print_number - print numbers 0-14, 10 times.
- * @d0 - 1st decimal place
- * @d1 - 2nd decimal place
+ * @n: number to return
+ * 
  * Return: numbers.
  **/
 
