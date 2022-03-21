@@ -2,14 +2,17 @@
 
 /**
  * main - find the largest prime factor
+ * @n: input number
+ * @div: constant
+ * @maxFact: largest factorial
  *
  * Return: Always 0.
  */
 
-int main()
+int main(void)
 {
 	long int n;
-	long int div=2;
+	long int div = 2;
 	long int maxFact;
 
 	n = 612852475143;
@@ -20,17 +23,18 @@ int main()
 		{
 			div = div + 1;
 		}
-	        else
-	        {
-	            	maxFact = n;
-	            	n = n / div;
+		else
+		{
+			maxFact = n;
+			n = n / div;
 
-	            	if (n == 1)
-	            	{
-	            		printf("%ld\n", maxFact);
-	            	        break;
-	            	}
-	        }
+			if (n == 1)
+			{
+				printf("%ld\n", maxFact);
+				break;
+			}
+		}
 	}
+
 	return (0);
 }
