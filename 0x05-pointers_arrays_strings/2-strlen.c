@@ -3,8 +3,8 @@
 
 /**
  * _strlen - check the code
- * @a: swap 1
- * @b: swap 2
+ * @s: s
+ *
  * Return: Always 0.
  */
 int _strlen(char *s)
@@ -13,7 +13,7 @@ int _strlen(char *s)
 	int length;
 
 	length = 0;
-	for (i = 0; s[i] != '\0';i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		length++;
 	}
