@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * _strcat - concatenates two strings
  * @dest: to be cated on
@@ -12,20 +13,20 @@ char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
-	int len;
 
 	i = 0;
-	len = 0;
+	j = 0;
 	while (dest[i] != '\0')
 	{
-		len += 1;
+		i++;
 	}
 
-	len -= 1;
-	for (j = 0 ; src[j] != '\0' ; j++)
+	while (src[j] != '\0')
 	{
-		dest[len + j] = src[j];
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-        dest[len + j] = '\0';
-        return (dest);
+	dest[i] = '\0';
+	return (dest);
 }
