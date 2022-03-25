@@ -29,12 +29,16 @@ char *cap_string(char *s)
 			while (check == 0 && j < 13)
 			{
 				if (s[i - 1] == a[j])
+				{
 					check = 1;
+				}
 				j++;
 			}
 
 			if (check == 1)
+			{
 				s[i] -= 32;
+			}
 
 		}
 		i++;
