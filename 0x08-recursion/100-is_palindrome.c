@@ -25,8 +25,8 @@ int is_palindrome(char *s)
 	for (j = 0; j < len; j++)
 	{
 		if (s[j] != s[len - j - 1])
-			return (1);
-		else
 			return (0);
+		else
+			return (1);
 	}
 }
