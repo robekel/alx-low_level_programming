@@ -11,10 +11,7 @@
 
 void print_number(int n)
 {
-	int i = 10;
-	int j = 0;
-	int num = 0;
-	int tmp;
+	int num;
 
 	if (n < 0)
 	{
@@ -22,26 +19,10 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	tmp = n;
-	if (n >= 0 && n < 10)
+	num = n;
+	if ((num / 10) > 0)
 	{
-		_putchar(n + '0');
+		print_number(num / 10);
 	}
-	else
-	{
-		while (n % i != n)
-		{
-			i *= 10;
-		}
-
-		j = i / 10;
-		while (n % i != 0)
-		{
-			num = tmp / j;
-			tmp = tmp % j;
-			_putchar(num + '0');
-			j /= 10;
-			i /= 10;
-		}
-	}
+	_putchar((num % 10) + '0');
 }
