@@ -1,3 +1,4 @@
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -7,11 +8,12 @@
  */
 int main(void)
 {
-	print_number(98);
+	print_number(INT_MAX);
 	_putchar('\n');
-	print_number(402);
-	_putchar('\n');
-	print_number(1024);
+/**	print_number(INT_MIN);
+ *	_putchar('\n');
+ */
+	print_number(123456789);
 	_putchar('\n');
 	print_number(0);
 	_putchar('\n');

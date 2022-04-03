@@ -5,18 +5,16 @@
 /**
  * print_number - print numbers 0-14, 10 times.
  * @n: number to return
- * 
+ *
  * Return: numbers.
  **/
 
 void print_number(int n)
 {
-	int d0;
-	int d1;
-	int d1tmp;
-	int d2;
-	int d2tmp;
-	int d3;
+	int i = 10;
+	int j = 0;
+	int num = 0;
+	int tmp;
 
 	if (n < 0)
 	{
@@ -24,41 +22,26 @@ void print_number(int n)
 		_putchar('-');
 	}
 
+	tmp = n;
 	if (n >= 0 && n < 10)
 	{
-		d0 = n;
-	}
-	else if ((n >= 10) && (n < 100))
-	{
-		d1 = n / 10;
-		d0 = n % 10;
-		_putchar(d1 + '0');
-	}
-	else if ((n >= 100) && (n < 1000))
-	{
-		d2 = n / 100;
-		d1tmp = n % 100;
-		_putchar(d2 + '0');
-
-		d1 = d1tmp / 10;
-		d0 = d1tmp % 10;
-		_putchar(d1 + '0');
+		_putchar(n + '0');
 	}
 	else
 	{
-		d3 = n / 1000;
-		d2tmp = n % 1000;
-		_putchar(d3 + '0');
+		while (n % i != n)
+		{
+			i *= 10;
+		}
 
-		d2 = d2tmp / 100;
-		d1tmp = d2tmp % 100;
-		_putchar(d2 + '0');
-
-		d1 = d1tmp / 10;
-		d0 = d1tmp % 10;
-		_putchar(d1 + '0');
-
+		j = i / 10;
+		while (n % i != 0)
+		{
+			num = tmp / j;
+			tmp = tmp % j;
+			_putchar(num + '0');
+			j /= 10;
+			i /= 10;
+		}
 	}
-
-	_putchar(d0 + '0');
 }
