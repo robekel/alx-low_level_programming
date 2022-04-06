@@ -34,6 +34,20 @@ int _wcount(char *sw)
  * Return: Pointer
  */
 
+char *_trspace(char *st)
+{
+	while (*st == ' ')
+		st++;
+	return (st);
+}
+
+/**
+ * strtow - splits a string into words
+ * @str: string
+ *
+ * Return: Double Pointer
+ */
+
 char **strtow(char *str)
 {
 	char **s, *ts;
