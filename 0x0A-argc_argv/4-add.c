@@ -4,9 +4,8 @@
 #include <ctype.h>
 
 /**
- * main - adds numbers
- * @argc: the number of passed arguments
- * @argv: an array of passsed arguments
+ * _isnumber - adds numbers
+ * @s: char to be checked
  *
  * Return: 0 on success, 1 on error
  */
