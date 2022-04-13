@@ -2,25 +2,19 @@
 #include <stdio.h>
 
 /**
- * print_dog - prints a struct dog
+ * init_dog - prints a struct dog
  * @d: Pointer to struc
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * @name: Dog's name@name: Dog's name
+ * @age: Dog's age.
+ * @owner: Dog's owner.
  */
 
-void print_dog(struct dog *d)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != 0)
+	if (d != NULL)
 	{
-		if ((*d).name != 0)
-			printf("Name: %s\n", (*d).name);
-		else
-			printf("Name: (nil)\n");
-		printf("Age: %f\n", (*d).age);
-		if ((*d).owner != 0)
-			printf("Owner: %s\n", (*d).owner);
-		else
-			printf("Owner: (nil)\n");
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
 	}
 }
