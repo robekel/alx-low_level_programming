@@ -5,7 +5,7 @@
  * @name: pet name
  * @age: pet age
  * @owner: owner
- * 
+ *
  * Description: Longer description
  */
 
