@@ -26,10 +26,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		v = cmp(array[i]);
 		counter += v;
 		if (v != 0)
-		{
 			return (i);
-			break;
-		}
 	}
 	if (counter == 0)
 		return (-1);
