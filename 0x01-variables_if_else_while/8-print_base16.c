@@ -10,7 +10,7 @@ int main(void)
 	int n;
 
 	n = 0x00;
-	while ((n % 16 ) == n)
+	while ((n % 16) == n)
 	{
 		printf("%x", n);
 		n++;
