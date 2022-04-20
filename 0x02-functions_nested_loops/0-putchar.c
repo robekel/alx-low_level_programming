@@ -6,7 +6,7 @@
  *
  * Return: o
  */
-int main()
+int main(void)
 {
 	char c[] = "_putchar";
 	int i = 0;
