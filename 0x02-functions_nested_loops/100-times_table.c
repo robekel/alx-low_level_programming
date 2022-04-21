@@ -1,10 +1,8 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * print_times_table - prints the n times table, starting with 0.
  * @n: table size
- *
  * Return: table
  */
 void print_times_table(int n)
@@ -18,14 +16,18 @@ void print_times_table(int n)
 		for (j = 0; j <= n; j++)
 		{
 			mul = i * j;
-			if (j == 0)
-				_putchar('0');
-			_putchar(',');
-			_putchar(' ');
+			if (j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			if (mul >= 0 && mul < 10)
 			{
-				_putchar(' ');
-				_putchar(' ');
+				if (j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(mul + '0');
 			}
 			if (mul >= 10 && mul < 100)
