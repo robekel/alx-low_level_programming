@@ -32,6 +32,12 @@ int main(int ac, char *av[])
 		istatus = read(input_fd, buf, MAXSIZE);
 		if (istatus == -1)
 		{
+			dprintf(SE, "Error: Can't read from file %s\n", av[1]);
+			exit(98);
+		}
+
+		if (istatus > 0)
+		{
 			ostatus = write(output_fd, buf, (ssize_t) istatus);
 			if (ostatus == -1)
 				dprintf(SE, "Error: Can't write to %s\n", av[2]), exit(99);
